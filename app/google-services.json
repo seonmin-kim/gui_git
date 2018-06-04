@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1063100337683",
+    "firebase_url": "https://geotogong.firebaseio.com",
+    "project_id": "geotogong",
+    "storage_bucket": "geotogong.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063100337683:android:4906f950f6de5e5c",
+        "android_client_info": {
+          "package_name": "kr.co.mystockhero.geotogong"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063100337683-hfcbfemqvb8e6rv5iea6ldarvsi5ne7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYKH9QT8Ir5WDpBzhnjtbM4f0DnPKj4Ck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
