@@ -1,146 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kr.co.mystockhero.geotogong">
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
 
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" android:required="false"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" android:required="false"/>
-    <uses-permission android:name="android.permission.INTERNET" android:required="false" />                  <!-- 인터넷을 사용하겠다는 권한 설정 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" android:required="false"/>
-    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" android:required="false"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK" android:required="false"/>                  <!-- 잠금상태 일때(화면이 꺼졌을 때) 화면을 깨울때 주는 권한 설정-->
-    <uses-permission android:name="android.permission.CALL_PHONE"  android:required="false"/>
-    <uses-permission android:name="android.permission.VIBRATE" android:required="false" />
-    <uses-permission android:name="android.intent.action.CALL_PRIVILEGED" android:required="false" />
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" android:required="false"/>
-    <uses-permission android:name="com.android.vending.BILLING" android:required="false"/>
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"  android:required="false"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  android:required="false"/>
-    <uses-permission android:name="android.permission.CAMERA" android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="false" /> <!-- 인터넷을 사용하겠다는 권한 설정 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        android:required="false" /> <!-- 잠금상태 일때(화면이 꺼졌을 때) 화면을 깨울때 주는 권한 설정 -->
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.VIBRATE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.intent.action.CALL_PRIVILEGED"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:required="false" />
+    <uses-permission
+        android:name="com.android.vending.BILLING"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission
+        android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
 
-    <uses-feature android:name="android.hardware.telephony" android:required="false" />
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
-    <uses-feature android:name="android.hardware.location" android:required="false" />
-    <uses-feature android:name="android.hardware.microphone" android:required="false" />
-    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
 
-    <!--&lt;!&ndash; [START gcm_permission] &ndash;&gt;-->
-    <!--<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />-->
-    <!--<permission android:name="kr.co.mystockhero.geotogong.permission.C2D_MESSAGE" android:protectionLevel="signature" />-->
-    <!--<uses-permission android:name="kr.co.mystockhero.geotogong.permission.C2D_MESSAGE" />-->
-    <!--&lt;!&ndash; [END gcm_permission] &ndash;&gt;-->
+    <!-- &lt;!&ndash; [START gcm_permission] &ndash;&gt; -->
+    <!-- <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> -->
+    <!-- <permission android:name="kr.co.mystockhero.geotogong.permission.C2D_MESSAGE" android:protectionLevel="signature" /> -->
+    <!-- <uses-permission android:name="kr.co.mystockhero.geotogong.permission.C2D_MESSAGE" /> -->
+    <!-- &lt;!&ndash; [END gcm_permission] &ndash;&gt; -->
 
 
-
-    <!--<tool-api-level>9</tool-api-level>--> <!-- Added this line because xlarge wasn't supported until android sdk version 9+-->
+    <!-- <tool-api-level>9</tool-api-level> -->
+    <!-- Added this line because xlarge wasn't supported until android sdk version 9+ -->
 
     <supports-screens
-        android:smallScreens="true"
-        android:normalScreens="true"
-        android:largeScreens="true"
-        android:xlargeScreens="true"
         android:anyDensity="true"
-    />
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
 
     <application
         android:name=".InvestmentApplication"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:hardwareAccelerated="true"
-        android:screenOrientation="portrait"
-        android:theme="@style/AppTheme"
         android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
         android:windowSoftInputMode="adjustResize">
-
         <activity
             android:name=".IntroActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/kakaolink_host"
+                    android:scheme="@string/kakao_scheme" />
             </intent-filter>
         </activity>
         <activity
             android:name=".GuideActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".MainTabActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
         <activity
             android:name=".login.TermsActivity"
-            android:screenOrientation="portrait">
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".login.JoinActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateVisible">
-        </activity>
+            android:windowSoftInputMode="stateVisible"></activity>
         <activity
             android:name=".login.LoginActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateVisible">
-        </activity>
+            android:windowSoftInputMode="stateVisible"></activity>
         <activity
             android:name=".login.FindPasswordActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateVisible">
-        </activity>
+            android:windowSoftInputMode="stateVisible"></activity>
         <activity
             android:name=".SuitabilityActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateVisible">
-        </activity>
+            android:windowSoftInputMode="stateVisible"></activity>
         <activity
             android:name=".login.LoginEmailActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateVisible">
-        </activity>
-
-        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
-            android:label="OAuth2.0 In-app"/>
+            android:windowSoftInputMode="stateVisible"></activity>
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app" />
         <!-- Google -->
-        <activity android:name=".login.GoogleLoginActivity"> </activity>
+        <activity android:name=".login.GoogleLoginActivity"></activity>
 
         <!-- Kakao -->
-        <activity android:name=".login.KakaoLoginActivity"></activity>
-        <activity android:name=".login.KakaoSignupActivity"></activity>
+        <activity android:name=".login.KakaoLoginActivity" />
+        <activity android:name=".login.KakaoSignupActivity" />
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="@string/kakao_app_key" />
 
         <!-- FaceBook -->
-        <activity android:name=".login.FaceBookLoginActivity"></activity>
+        <activity android:name=".login.FaceBookLoginActivity" />
 
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
 
         <!-- [START firebase_service] -->
-        <service
-            android:name="kr.co.mystockhero.geotogong.common.gcm.MyFirebaseMessagingService">
+        <service android:name=".common.gcm.MyFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
         <!-- [END firebase_service] -->
         <!-- [START firebase_iid_service] -->
-        <service
-            android:name="kr.co.mystockhero.geotogong.common.gcm.MyFirebaseInstanceIDService">
+        <service android:name=".common.gcm.MyFirebaseInstanceIDService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
         <!-- [END firebase_iid_service] -->
+
+
+        <!-- 애드브릭스 -->
+        <meta-data
+            android:name="igaworks_app_key"
+            android:value="573246139" />
+        <meta-data
+            android:name="igaworks_hash_key"
+            android:value="da5634819cd54874" />
+
+        <receiver
+            android:name=".IgawReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

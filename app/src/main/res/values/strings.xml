@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">거장투자공식</string>
+    <string name="app_version">2.4.1(18.05.11)</string>
+    <string name="call_center">02-6945-1700</string>
+    <string name="hel_email">mif@mystockhero.com</string>
+
+    <string name="service_popup_1">
+        <![CDATA[다음은 서비스 이용자들의 투자손실 및 각종 피해를 방지하기 위하여 명시하는 사항으로 본 서비스 이용자는 <font color=\'#5555FF\'><b>반드시 숙지</b></font>하셔야 합니다.]]>
+    </string>
+    <string name="service_popup_2">
+        <![CDATA[본 서비스에 등장하는 인물, 기관, 사건들은 <b>사용자 편의와 몰입력을 확보하기 위해 구성된 가상의 스토리</b>입니다.]]>
+    </string>
+    <string name="service_popup_3">
+        <![CDATA[본 서비스의 투자종목은 <b>공학적인 빅데이터 처리 방식을 기반으로 투자 거장의 아이디어를 재해석하여 발굴한 종목</b>입니다.]]>
+    </string>
+    <string name="service_popup_4">
+        <![CDATA[과거 수익률이 미래의 투자수익률을 <b>보장해 주는 것은 아닙니다.</b>]]>
+    </string>
+    <string name="service_popup_5">
+        <![CDATA[본 서비스는 정보의 <b>무결성을 보증하지 않으며</b> 주식투자는 시장급변, 변동성 노출 위험에 따른 <b>원금손실의 위험이 수반</b>됩니다.]]>
+    </string>
+    <string name="service_popup_6">
+        <![CDATA[최종 투자의사결정은 <b>투자자의 몫</b>이며 <b>원금손실</b> 뿐만 아니라 <b>직간접적인 투자손실</b>이 발생할 수 있으므로, 반드시 투자권유문서 확인 및 <b>심사숙고 후 본 서비스를 이용</b>해 주시기 바랍니다.<br>]]>
+    </string>
+
+    <string name="pdf_show_local_progress_title">
+        <![CDATA[투자권유문서 다운로드]]>
+    </string>
+    <string name="pdf_show_local_progress_content">
+        <![CDATA[다운로드 중...]]>
+    </string>
+    <string name="pdf_show_online_dialog_title">
+        <![CDATA[pdf_show_online_dialog_title]]>
+    </string>
+    <string name="pdf_show_online_dialog_question">
+        <![CDATA[pdf_show_online_dialog_question]]>
+    </string>
+    <string name="pdf_show_online_dialog_button_no">
+        <![CDATA[pdf_show_online_dialog_button_no]]>
+    </string>
+    <string name="pdf_show_online_dialog_button_yes">
+        <![CDATA[pdf_show_online_dialog_button_yes]]>
+    </string>
+
+    <!-- Google -->
+    <string name="loading">로딩중...</string>
+    <string name="signed_out">비로그인 상태</string>
+    <string name="signed_in_fmt"></string>
+
+    <!-- KaKao -->
+    <string name="kakao_app_key">a93ff124b0d12675b161a23d0bbba381</string>
+    <string name="kakao_scheme">kakaoa93ff124b0d12675b161a23d0bbba381</string>
+    <string name="kakaolink_host">kakaolink</string>
+
+    <!-- FaceBook -->
+    <string name="facebook_app_id">1772421963076340</string>
+
+</resources>

@@ -405,6 +405,7 @@ public class LoginEmailActivity extends CommonActivity {
                     login_progressDialog.dismiss();
                     check_autosubscriptions();
                     check_subs_smartscore();
+                    check_subs_package();
                     CommonUtil.DebugLog("LoginEmailActivity - ExcuteLogin - checkautosubscriptions");
                     Intent intent = new Intent(LoginEmailActivity.this, MainTabActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -436,7 +437,20 @@ public class LoginEmailActivity extends CommonActivity {
     }
 
     public void check_subs_smartscore() {
+        CommonUtil.DebugLog("check_subs_smartscore()");
         excuteNetworkTask("/mystockhero_android/check_subs_smartscore.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+            @Override
+            public void onError(int errorCode, String message) {
+            }
+
+            @Override
+            public void onRespons(Object result) throws Exception {
+            }
+        });
+    }
+
+    public void check_subs_package() {
+        excuteNetworkTask("/mystockhero_android/check_subs_package.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }

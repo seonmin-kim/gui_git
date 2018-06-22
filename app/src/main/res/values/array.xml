@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_language">
+        <item>한글</item>
+        <item>영어</item>
+    </string-array>
+    <string-array name="setting_language_value">
+        <item>ko</item>
+        <item>en</item>
+    </string-array>
+
+    <string-array name="setting_start_page">
+        <item>보유거장</item>
+        <item>나의페이지</item>
+        <item>전종목 Score</item>
+        <item>메인 홈</item>
+        <item>종목발굴관</item>
+        <item>My Signal</item>
+        <item>거장칼리지</item>
+        <!--<item>마지막으로 열어본 화면</item>-->
+    </string-array>
+    <string-array name="setting_start_page_value">
+        <item>HoldMasters</item>
+        <item>MyPage</item>
+        <item>RealReport</item>
+        <item>Home</item>
+        <item>MasterPremium</item>
+        <item>Mysignal</item>
+        <item>Notice</item>
+        <!--<item>LastPage</item>-->
+    </string-array>
+
+    <string-array name="setting_guide_page">
+        <item>리얼 레포트</item>
+        <item>메인 홈</item>
+        <item>거장 투자전략</item>
+        <item>월간랭킹 Top3</item>
+    </string-array>
+    <string-array name="setting_guide_page_value">
+        <item>check_manual_realreportdetail</item>
+        <item>check_manual_home</item>
+        <item>check_manual_masterdetail</item>
+        <item>check_manual_masterleague</item>
+    </string-array>
+
+</resources>

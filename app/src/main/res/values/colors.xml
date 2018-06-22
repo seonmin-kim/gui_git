@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="fragment_top_line">#CCCCCC</color>
+    <color name="fragment_bg">#E5E5E5</color>
+
+    <color name="list_bg">#FFFFFF</color>
+</resources>

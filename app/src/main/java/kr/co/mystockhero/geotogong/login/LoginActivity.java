@@ -102,7 +102,7 @@ public class LoginActivity extends CommonActivity {
 
         // checkAvailableConnection();
 
-        getIPAddress();
+        // getIPAddress();
     }
 
     public void getIPAddress() {
@@ -204,6 +204,7 @@ public class LoginActivity extends CommonActivity {
                         Intent intent = new Intent(getApplicationContext(), KakaoLoginActivity.class);
 //                        intent.putExtra("auto_others_login", ((CheckBox) bodyLayout.findViewWithTag("auto_others_login")).isChecked() ? "true" : "false");
                         startActivity(intent);
+                        finish();
                     }
                 });
 
@@ -359,6 +360,7 @@ public class LoginActivity extends CommonActivity {
                 intent.putExtra("id",id);
                 intent.putExtra("domain",domain);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -505,12 +507,14 @@ public class LoginActivity extends CommonActivity {
         Intent intent = new Intent(getApplicationContext(), GoogleLoginActivity.class);
 //        intent.putExtra("auto_others_login", ((CheckBox) bodyLayout.findViewWithTag("auto_others_login")).isChecked() ? "true" : "false");
         startActivity(intent);
+        finish();
         //((MainTabActivity)this.getFragmentManager().fragmentAdd(GoogleLoginActivity.class, null, null);
     }
 
     public void login_FaceBook() {
         Intent intent = new Intent(getApplicationContext(), FaceBookLoginActivity.class);
         startActivity(intent);
+        finish();
     }
 
     @Override
@@ -707,13 +711,12 @@ public class LoginActivity extends CommonActivity {
                     login_progressDialog.dismiss();
                     check_autosubscriptions();
                     check_subs_smartscore();
+                    check_subs_package();
                     CommonUtil.DebugLog("LoginActivity - ExcuteLoginOthers - checkautosubscriptions");
 
                     Intent intent = new Intent(LoginActivity.this, MainTabActivity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
-
-
                     finish();
                 }
 
@@ -748,6 +751,18 @@ public class LoginActivity extends CommonActivity {
 
     public void check_subs_smartscore() {
         excuteNetworkTask("/mystockhero_android/check_subs_smartscore.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+            @Override
+            public void onError(int errorCode, String message) {
+            }
+
+            @Override
+            public void onRespons(Object result) throws Exception {
+            }
+        });
+    }
+
+    public void check_subs_package() {
+        excuteNetworkTask("/mystockhero_android/check_subs_package.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }

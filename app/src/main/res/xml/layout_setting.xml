@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <com.mystockhero.geotogong.common.widget.CustomPreferenceCategory
+        android:title=""
+        android:key="category_common">
+        <Preference
+            android:title="공지사항"
+            android:summary=""
+            android:key="setting_notice">
+        </Preference>
+        <SwitchPreference
+            android:title="로그인 유지"
+            android:key="setting_autologin"
+            android:summaryOn="로그인이 유지되어 간편입장이 가능합니다."
+            android:summaryOff="로그인이 유지되어 간편입장이 가능합니다.">
+        </SwitchPreference>
+        <Preference
+            android:title="로그인"
+            android:summary=""
+            android:key="setting_login">
+        </Preference>
+    </com.mystockhero.geotogong.common.widget.CustomPreferenceCategory>
+
+    <PreferenceCategory android:title="알림/메세지">
+        <SwitchPreference
+            android:title="일반알림"
+            android:key="setting_notify"
+            android:summary="이벤트, 공지사항, 시스템 업데이트 등을 정기적으로 알려드립니다.">
+        </SwitchPreference>
+        <SwitchPreference
+            android:title="급등주/급락주 알림"
+            android:key="setting_stock"
+            android:summary="현재 구매하신 거장의 종목중 급등주/급락주 발생 시 알림을 받아 항시 리스크 관리를 할 수 있습니다."            >
+        </SwitchPreference>
+        <SwitchPreference
+            android:title="거장 포트폴리오"
+            android:key="setting_news"
+            android:summary="공학적 리밸런싱을 거친 거장 신규종목 추천 시 알림을 받으실 수 있습니다."            >
+        </SwitchPreference>
+        <SwitchPreference
+            android:title="성투를 위한 마법메세지"
+            android:key="setting_message"
+            android:summary="성공투자를 위하여 마음을 다스리는 명언 및 조언을 시장상황에 맞게 수신 받으실 수 있습니다."            >
+        </SwitchPreference>
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:key="autoUpdate_ringtone"
+            android:ringtoneType="notification"
+            android:summary="앱의 알림방식을 사용자의 편의에 맞도록 변경할 수 있습니다."
+            android:showSilent="true"
+            android:title="알림 소리">
+        </RingtonePreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="일반설정" >
+        <!--<ListPreference-->
+            <!--android:defaultValue="ko"-->
+            <!--android:entries="@array/setting_language"-->
+            <!--android:entryValues="@array/setting_language_value"-->
+            <!--android:key="setting_language"-->
+            <!--android:negativeButtonText="@null"-->
+            <!--android:positiveButtonText="@null"-->
+            <!--android:title="언어설정" />-->
+        <ListPreference
+            android:defaultValue="Home"
+            android:entries="@array/setting_start_page"
+            android:entryValues="@array/setting_start_page_value"
+            android:key="setting_start_page"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="사직화면 설정" />
+        <ListPreference
+            android:title="버전정보"
+            android:summary="@string/app_version"
+            android:key="setting_version">
+        </ListPreference>
+        <Preference
+            android:title="QA게시판"
+            android:key="setting_qa">
+        </Preference>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
