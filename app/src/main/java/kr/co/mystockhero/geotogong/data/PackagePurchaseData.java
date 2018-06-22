@@ -1,6 +1,7 @@
 package kr.co.mystockhero.geotogong.data;
 
 public class PackagePurchaseData extends JsonData {
+    public int id;
     public String google_product_id;
     public String product;
     public int period;
