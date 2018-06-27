@@ -109,7 +109,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
         updateIconBadgeCount(getApplicationContext(), 0);
 
         CommonUtil.DebugLog("MainTabActivity - makeLayout Executed: " + application.userRealId);
-        url = "http://mystockhero.com/mystockhero_android/successlogin.php?id="+application.userRealId;
+        url = "http://mystockhero.com/mystockhero_android_sm/successlogin.php?id="+application.userRealId;
         if(getIntent().getExtras().getString("url") != null){
             url = getIntent().getExtras().getString("url");
         }
@@ -275,14 +275,14 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
                 // 앱 설치 or 업데이트시 처음 한번만 프로필 수정 화면 띄우기
                 /*if(!CommonUtil.getPreferences(getApplicationContext(), "first_setting", "").equals("done")) {
                     FirebaseMessaging.getInstance().subscribeToTopic("geotogong_all");
-                    webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android/mypage/settingprofile.php");
+                    webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android_sm/mypage/settingprofile.php");
                     CommonUtil.setPreferences(getApplicationContext(), "first_setting", "done");
                 }*/
 
-                if(urlNewString.equals("http://mystockhero.com/mystockhero_android/index.php")){
+                if(urlNewString.equals("http://mystockhero.com/mystockhero_android_sm/index.php")){
                     goLogout();
                     return true;
-                }else if(urlNewString.equals("http://mystockhero.com/mystockhero_android/mainhome/pricetable.php")){
+                }else if(urlNewString.equals("http://mystockhero.com/mystockhero_android_sm/mainhome/pricetable.php")){
                     // ////////////////////////////////////////////////////////////////////////////////////
                     //  결제 페이지 앱으로 적용시 아래 코드 사용
                     // ////////////////////////////////////////////////////////////////////////////////////
@@ -604,7 +604,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
                 e.printStackTrace();
             }
 
-            excuteNetworkTask("/mystockhero_android/subscribe_smartscore.php", params, true, new AsyncNetworkTask.NetworkTaskListener() {
+            excuteNetworkTask("/mystockhero_android_sm/subscribe_smartscore.php", params, true, new AsyncNetworkTask.NetworkTaskListener() {
                 @Override
                 public void onError(int errorCode, String message) {
                     hideLoadingBar();
@@ -643,7 +643,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
                 e.printStackTrace();
             }
 
-            excuteNetworkTask("/mystockhero_android/subscribe_package.php", params, true, new AsyncNetworkTask.NetworkTaskListener() {
+            excuteNetworkTask("/mystockhero_android_sm/subscribe_package.php", params, true, new AsyncNetworkTask.NetworkTaskListener() {
                 @Override
                 public void onError(int errorCode, String message) {
                     hideLoadingBar();
@@ -752,7 +752,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
                     showAlert("결제", "구독 성공하였습니다.", "확인", "", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android/masterpremium/index.php");
+                            webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android_sm/masterpremium/index.php");
                         }
                     });
 
@@ -769,7 +769,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
             showAlert("결제", "구독 성공하였습니다.", "확인", "", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android/quantreport/index.php");
+                    webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android_sm/quantreport/index.php");
                 }
             });
 
@@ -784,7 +784,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
             showAlert("결제", "구독 성공하였습니다.", "확인", "", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android/quantreport/index.php");
+                    webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android_sm/quantreport/index.php");
                 }
             });
 
@@ -810,7 +810,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
                 e.printStackTrace();
             }
 
-            excuteNetworkTask("/mystockhero_android/consume_smartscore.php", params, true, new AsyncNetworkTask.NetworkTaskListener() {
+            excuteNetworkTask("/mystockhero_android_sm/consume_smartscore.php", params, true, new AsyncNetworkTask.NetworkTaskListener() {
                 @Override
                 public void onError(int errorCode, String message) {
                     hideLoadingBar();
@@ -834,7 +834,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
                         showAlert("결제", "구독 성공하였습니다.", "확인", "", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android/quantreport/index.php");
+                                webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android_sm/quantreport/index.php");
                             }
                         });
                     } else { // 이미 구매한 상품을 소모할 시
@@ -901,7 +901,7 @@ public class MainTabActivity extends IabActivity implements IabActivity.OnIabLis
                         showAlert("결제", "구독 성공하였습니다.", "확인", "", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android/masterpremium/index.php");
+                                webViewLayout.loadUrl("http://mystockhero.com/mystockhero_android_sm/masterpremium/index.php");
                             }
                         });
                     } else { // 이미 구매한 상품을 소모할 시

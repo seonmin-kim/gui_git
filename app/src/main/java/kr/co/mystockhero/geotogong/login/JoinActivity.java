@@ -46,7 +46,7 @@ public class JoinActivity extends CommonActivity {
 
     private void makeJoinLayout() {
 
-        topLayout = rootLayout.makeTop("", 0xffffffff, 0xff252525, -1, R.drawable.exit_button, this);
+        topLayout = rootLayout.makeTop("", 0xffffffff, 0xff252525, -1, R.drawable.back_button, this);
         bodyLayout = rootLayout.makeBody();
 
         bodyLayout.setBackgroundColor(0xffffffff);

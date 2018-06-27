@@ -46,6 +46,7 @@ import static kr.co.mystockhero.geotogong.common.widget.ImageView.createImageVie
 public class LoginEmailActivity extends CommonActivity {
 
     private CallbackManager callbackManager;
+    LoginActivity loginActivity = (LoginActivity)LoginActivity.loginActivity;
 
     @Override
     protected void makeLayout() {
@@ -73,7 +74,7 @@ public class LoginEmailActivity extends CommonActivity {
         // getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
-        topLayout = rootLayout.makeTop("", 0xffffffff, 0xffffffff, -1, R.drawable.exit_button, this);
+        topLayout = rootLayout.makeTop("", 0xffffffff, 0xffffffff, -1, R.drawable.back_button, this);
         bodyLayout = rootLayout.makeBody();
 
         bodyLayout.setBackgroundColor(0xffffffff);
@@ -158,7 +159,7 @@ public class LoginEmailActivity extends CommonActivity {
                 LinearLayout.HORIZONTAL, 0xff707070);
 
         ImageView textView_signup = createImageView(null, this, layout_body,
-                layout_body.createLayoutParams(Gravity.CENTER_HORIZONTAL|Gravity.TOP, 0, 30, 0, 0, ViewGroup.LayoutParams.MATCH_PARENT, 78), R.drawable.ok_button);
+                layout_body.createLayoutParams(Gravity.CENTER_HORIZONTAL|Gravity.TOP, 0, 30, 0, 0, ViewGroup.LayoutParams.MATCH_PARENT, 78), R.drawable.login_button);
 
         textView_signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -412,6 +413,7 @@ public class LoginEmailActivity extends CommonActivity {
                     startActivity(intent);
 
                     finish();
+                    loginActivity.finish();
                 }
             }
         });
@@ -425,7 +427,7 @@ public class LoginEmailActivity extends CommonActivity {
     }
 
     public void check_autosubscriptions() {
-        excuteNetworkTask("/mystockhero_android/check_subscriptions.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subscriptions.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }
@@ -438,7 +440,7 @@ public class LoginEmailActivity extends CommonActivity {
 
     public void check_subs_smartscore() {
         CommonUtil.DebugLog("check_subs_smartscore()");
-        excuteNetworkTask("/mystockhero_android/check_subs_smartscore.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subs_smartscore.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }
@@ -450,7 +452,7 @@ public class LoginEmailActivity extends CommonActivity {
     }
 
     public void check_subs_package() {
-        excuteNetworkTask("/mystockhero_android/check_subs_package.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subs_package.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }

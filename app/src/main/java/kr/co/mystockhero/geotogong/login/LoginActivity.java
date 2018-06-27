@@ -76,6 +76,7 @@ import static kr.co.mystockhero.geotogong.common.widget.ImageView.createImageVie
 public class LoginActivity extends CommonActivity {
 
     private CallbackManager callbackManager;
+    public static LoginActivity loginActivity;
 
     @Override
     protected void makeLayout() {
@@ -93,6 +94,7 @@ public class LoginActivity extends CommonActivity {
         } catch (NoSuchAlgorithmException e) {
 
         }
+        loginActivity = LoginActivity.this;
 
         String name = CommonUtil.getPreferences(LoginActivity.this, "login_name", "");
         String id = CommonUtil.getPreferences(LoginActivity.this, "login_id", "");
@@ -360,7 +362,6 @@ public class LoginActivity extends CommonActivity {
                 intent.putExtra("id",id);
                 intent.putExtra("domain",domain);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -738,7 +739,7 @@ public class LoginActivity extends CommonActivity {
     }
 
     public void check_autosubscriptions() {
-        excuteNetworkTask("/mystockhero_android/check_subscriptions.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subscriptions.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }
@@ -750,7 +751,7 @@ public class LoginActivity extends CommonActivity {
     }
 
     public void check_subs_smartscore() {
-        excuteNetworkTask("/mystockhero_android/check_subs_smartscore.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subs_smartscore.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }
@@ -762,7 +763,7 @@ public class LoginActivity extends CommonActivity {
     }
 
     public void check_subs_package() {
-        excuteNetworkTask("/mystockhero_android/check_subs_package.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subs_package.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }

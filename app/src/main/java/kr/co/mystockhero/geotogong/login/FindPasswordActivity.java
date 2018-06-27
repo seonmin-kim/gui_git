@@ -47,7 +47,7 @@ public class FindPasswordActivity extends CommonActivity {
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
 
-        topLayout = rootLayout.makeTop("", 0xffffffff, 0xffffffff, -1, R.drawable.exit_button, this);
+        topLayout = rootLayout.makeTop("", 0xffffffff, 0xffffffff, -1, R.drawable.back_button, this);
         bodyLayout = rootLayout.makeBody();
 
         bodyLayout.setBackgroundColor(0xffffffff);

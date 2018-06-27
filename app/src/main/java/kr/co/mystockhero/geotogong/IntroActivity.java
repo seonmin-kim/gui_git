@@ -267,7 +267,7 @@ public class IntroActivity extends  CommonActivity {
     }
 
     public void check_autosubscriptions() {
-        excuteNetworkTask("/mystockhero_android/check_subscriptions.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subscriptions.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }
@@ -279,7 +279,7 @@ public class IntroActivity extends  CommonActivity {
     }
 
     public void check_subs_smartscore() {
-        excuteNetworkTask("/mystockhero_android/check_subs_smartscore.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subs_smartscore.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
                 CommonUtil.DebugLog("Error: " + message);
@@ -293,7 +293,7 @@ public class IntroActivity extends  CommonActivity {
     }
 
     public void check_subs_package() {
-        excuteNetworkTask("/mystockhero_android/check_subs_package.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
+        excuteNetworkTask("/mystockhero_android_sm/check_subs_package.php", new JSONObject(), false, new AsyncNetworkTask.NetworkTaskListener() {
             @Override
             public void onError(int errorCode, String message) {
             }

@@ -201,7 +201,7 @@ public class TitleViewGroup extends RelativeLayout {
             if( rightId == R.drawable.close_02 ) { size = new Point(30,30);  }
             if( rightId == R.drawable.realreportdetail_interest_on || rightId == R.drawable.realreportdetail_interest_off) { size = new Point(40,40);  }
             if( rightId ==  R.drawable.mypage_icon){ size = new Point(37,37);}
-            if( rightId == R.drawable.exit_button ) { size = new Point(60,50); addX = 18;}
+            if( rightId == R.drawable.back_button ) { size = new Point(60,50); addX = 18;}
 
             LinearLayout top_right_btn_area = LinearLayout.createLayout("top_right_btn_area", context, topLayout,
                     createScaledLayoutParams(Gravity.RIGHT|Gravity.CENTER_VERTICAL, 0,0,0,0, 88, ViewGroup.LayoutParams.MATCH_PARENT));
