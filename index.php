@@ -17,5 +17,9 @@
 	<ul>
 		<li>이건 뭘까!</li>
 	</ul>
+	<ul>
+		<li>Git이란?</li>
+		<li>무엇인가?</li>
+	</ul>
 </body>
 </html>
