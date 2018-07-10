@@ -20,6 +20,7 @@
 	<ul>
 		<li>Git이란?</li>
 		<li>무엇인가?</li>
+		<li>시작~</li>
 	</ul>
 </body>
 </html>
