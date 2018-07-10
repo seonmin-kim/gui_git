@@ -9,7 +9,7 @@
 	</header>
 	<ul>
 		<li>브랜치</li>
-		<li>Master</li>
+		<li>Test</li>
 	</ul>
 </body>
 </html>
