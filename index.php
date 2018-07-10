@@ -15,7 +15,7 @@
 		<li>병합이닷2</li>
 	</ul>
 	<ul>
-		<li>이건 뭘까!</li>
+		<li>이건 !</li>
 	</ul>
 </body>
 </html>
