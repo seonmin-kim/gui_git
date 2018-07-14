@@ -23,6 +23,7 @@
 		<li>충돌의 해결!</li>
 		<li>원격 저장소</li>
 		<li>PUSH</li>
+		<li>clone한다 pull</li>
 	</ul>
 	<ul>
 		<li>Git이란?</li>
