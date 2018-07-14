@@ -18,6 +18,7 @@
 		<li>이건 !</li>
 		<li>Branch!</li>
 		<li>브랜치!</li>
+		<li>충돌의 최소화!</li>
 	</ul>
 	<ul>
 		<li>Git이란?</li>
