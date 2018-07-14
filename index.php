@@ -30,6 +30,7 @@
 		<li>시작~</li>
 		<li>원격저장소 Github</li>
 		<li>여기는 원래놈</li>
+		<li>clone한다 pull</li>
 	</ul>
 </body>
 </html>
