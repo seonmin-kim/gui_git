@@ -19,6 +19,7 @@
 		<li>Branch!</li>
 		<li>브랜치!</li>
 		<li>충돌의 최소화!</li>
+		<li>원격 저장소</li>
 	</ul>
 	<ul>
 		<li>Git이란?</li>
