@@ -28,6 +28,7 @@
 		<li>Git이란?</li>
 		<li>무엇인가?</li>
 		<li>시작~</li>
+		<li>원격저장소 Github</li>
 	</ul>
 </body>
 </html>
