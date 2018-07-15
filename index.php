@@ -32,6 +32,7 @@
 		<li>원격저장소 Github</li>
 		<li>여기는 원래놈</li>
 		<li>clone한다 pull</li>
+		<li>충돌만들기</li>
 	</ul>
 </body>
 </html>
