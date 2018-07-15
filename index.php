@@ -33,11 +33,7 @@
 		<li>여기는 원래놈</li>
 		<li>clone한다 pull</li>
 		<li>충돌만들기.conflict</li>
-<<<<<<< HEAD
 	asdqwe
-=======
-		sffds
->>>>>>> fe6c56ad45ee67266dc9139b7f9aa48d12ee436e
 	</ul>
 </body>
 </html>
